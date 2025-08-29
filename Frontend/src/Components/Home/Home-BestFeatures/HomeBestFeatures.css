@@ -1,0 +1,234 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General Styling */
+.best-features-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 120px;
+  background-color: #f8fcfb;
+  font-family: Arial, sans-serif;
+  gap: 80px; /* Use gap for spacing between content and images */
+}
+
+/* Left Content Area */
+.best-features-content {
+  flex: 1;
+  max-width: 500px;
+}
+
+.what-we-give {
+  color: #f7a100;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+.section-title {
+  font-size: 40px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.section-description {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 40px;
+}
+
+/* Feature List */
+.feature-list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.feature-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.feature-icon {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  margin-top: 5px;
+}
+
+.feature-item h3 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.feature-item p {
+  font-size: 15px;
+  color: #777;
+  line-height: 1.5;
+}
+
+/* Explore Now Button */
+.explore-now-button {
+  background-color: #2e4d58;
+  color: #fff;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.explore-now-button:hover {
+  background-color: #1f3741;
+}
+
+/* Right Image Grid Area */
+.best-features-images {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+  width: 550px;
+  height: auto;
+}
+
+.image-item {
+  overflow: hidden;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.image-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Curved shapes and transforms */
+.top-left {
+  border-bottom-right-radius: 50%;
+  transform: translateY(-20px);
+}
+
+.top-right {
+  border-bottom-left-radius: 50%;
+  transform: translateY(20px);
+}
+
+.bottom-left {
+  border-top-right-radius: 50%;
+  transform: translateY(-20px);
+}
+
+.bottom-right {
+  border-top-left-radius: 50%;
+  transform: translateY(20px);
+}
+
+/* ======================================================= */
+/* ============= Media Queries for Responsiveness ======== */
+/* ======================================================= */
+
+/* For tablets and small desktops (screen width up to 1024px) */
+@media (max-width: 1024px) {
+  .best-features-section {
+    flex-direction: column;
+    padding: 60px 40px;
+    gap: 40px; /* Reduced gap for stacking layout */
+  }
+
+  .best-features-content {
+    max-width: 100%;
+    text-align: center;
+  }
+  
+  /* Center the content blocks */
+  .section-title,
+  .section-description,
+  .what-we-give,
+  .explore-now-button {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* Center the features list */
+  .feature-list {
+    align-items: center;
+  }
+  
+  /* Stack feature items vertically */
+  .feature-item {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .best-features-images {
+    width: 100%;
+  }
+
+  .image-grid {
+    width: 90%; /* Adjust grid width to prevent horizontal scroll */
+    max-width: 550px; /* Maintain a max-width for larger tablets */
+  }
+
+  /* Remove transforms on tablets to simplify the layout */
+  .top-left, .top-right, .bottom-left, .bottom-right {
+    transform: none;
+    border-radius: 20px; /* Keep regular rounded corners */
+  }
+}
+
+/* For mobile phones (screen width up to 768px) */
+@media (max-width: 768px) {
+  .best-features-section {
+    padding: 40px 20px;
+  }
+
+  .section-title {
+    font-size: 32px;
+  }
+
+  .section-description {
+    font-size: 15px;
+  }
+
+  .image-grid {
+    grid-template-columns: 1fr; /* Stack images in a single column */
+    width: 100%;
+    max-width: 350px;
+    margin: 0 auto;
+  }
+}
+
+/* For small mobile phones (screen width up to 480px) */
+@media (max-width: 480px) {
+  .section-title {
+    font-size: 28px;
+  }
+
+  .explore-now-button {
+    padding: 12px 25px;
+    font-size: 15px;
+  }
+}

@@ -1,6 +1,8 @@
 import React from 'react'
 import "./Home.css"
 import HomeAboutUs from './Home-About-Us/HomeAboutUs'
+import HomeBestFeatures from './Home-BestFeatures/HomeBestFeatures'
+import HomePopularDestinations from './Home-Popular-Destinations/HomePopularDestinations'
 
 function Home() {
   return (
@@ -26,6 +28,10 @@ function Home() {
       </div>
 
       <HomeAboutUs />
+
+      <HomeBestFeatures />
+
+      <HomePopularDestinations />
     </main>
   )
 }

@@ -86,17 +86,17 @@
     font-weight: 300;
 }
 
-.right-box-wrapper button{
-    width: fit-content;
-    height: fit-content;
-    background-color: #28536b;
-    color: aliceblue;
-    padding:12px 15px;
-    border: none;
-    border-radius: 8px;
-    font-size: 15px;
-    text-transform: capitalize;
-    letter-spacing: 1px;
-    font-weight: 500;
-    cursor: pointer;
+.explore-now-button {
+  background-color: #2e4d58;
+  color: #fff;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.explore-now-button:hover {
+  background-color: #1f3741;
 }
