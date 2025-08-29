@@ -8,12 +8,13 @@
 nav{
     height: 90px;
     width: 100vw;
-    background-color: blue;
+    background-color: transparent;
     display: flex;
     justify-content: space-between;
     /* align-items: center; */
     padding: 20px;
-
+    position: fixed;
+    z-index: 1000;
 }
 
 /* Nav Left  */

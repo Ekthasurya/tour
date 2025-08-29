@@ -1,5 +1,6 @@
 import React from 'react'
 import "./Home.css"
+import HomeAboutUs from './Home-About-Us/HomeAboutUs'
 
 function Home() {
   return (
@@ -22,8 +23,9 @@ function Home() {
           </h2>
           
         </div>
-
       </div>
+
+      <HomeAboutUs />
     </main>
   )
 }
