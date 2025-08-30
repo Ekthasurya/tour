@@ -3,6 +3,8 @@ import "./Home.css"
 import HomeAboutUs from './Home-About-Us/HomeAboutUs'
 import HomeBestFeatures from './Home-BestFeatures/HomeBestFeatures'
 import HomePopularDestinations from './Home-Popular-Destinations/HomePopularDestinations'
+import HomeHotels from './Home-Hotels/HomeHotels'
+import HomeSubscribeSection from './Home-Subscribe-Section/HomeSubscribeSection'
 
 function Home() {
   return (
@@ -32,6 +34,10 @@ function Home() {
       <HomeBestFeatures />
 
       <HomePopularDestinations />
+
+      <HomeHotels />
+
+      <HomeSubscribeSection />
     </main>
   )
 }
